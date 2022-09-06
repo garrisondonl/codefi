@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="us">
+    <meta charset="UTF-8" />
+    <style>
+        h1 {
+            color: blue;
+            background: red;
+        }
+        h2 {
+            color: orange;
+            background: yellow;
+        }
+        button {
+            border-width: 4px;
+            border-color: black;
+            border-radius: 20px;
+            color: rgb(225, 243, 67);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            background-color: green;
+        }
+    </style>
+<head>
+<title>Class 1 exercise 1</title>
+</head>
+
+<body>
+    <section>
+        <h1 class="headingOne";>This is a heading</h1>
+        <h2 class="headingTwo";>This is also a heading</h2>
+        <button class="btn-primary" type="button" onclick="updateColors()";>click me</button>
+
+    </section>
+    
+</body>
+
+</html>
+
+<script>
+function updateColors() {
+
+// Selects the first <h1> element
+const headingOne = document.querySelector("h1");
+
+// Selects the element with a class name of "heading-two"
+const headingTwo = document.querySelector(".headingTwo");
+
+// Selects the body element
+const bodyEl = document.querySelector("body");
+
+// Changes the "headingOne" variable's text content
+headingOne.innerText = "it Works   .  .  .  WOW  .  .  .  it Really Works!";
+
+// Changes the "headingTwo" variable's text color
+headingTwo.style.color = "#134e4a";
+
+// Change the body's background color, and the text color on click
+  bodyEl.style.backgroundColor = "#0c4a6e";
+  headingOne.style.color = "#f0f9ff";
+  headingTwo.style.color = "#7dd3fc";
+}
+
+</script>
