@@ -13,12 +13,16 @@
 
 <script>
 
-function redundantFunction(str)[
+function redundantFunction(str){
     function message(){
         console.log(str);
     }
     return message;
-]
+}
+
+const outerCall = redundantFunction("This is a string");
+
+outerCall();
 
 
 
